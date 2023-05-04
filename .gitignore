@@ -1,0 +1,5 @@
+# Apple Desktop Services Store
+.DS_STORE
+
+# Database of the Neural Network
+/data
