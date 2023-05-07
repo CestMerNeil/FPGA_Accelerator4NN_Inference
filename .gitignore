@@ -1,5 +1,13 @@
 # Apple Desktop Services Store
-.DS_STORE
+*.DS_Store
+.DS_Store
 
 # Database of the Neural Network
+/Neural_Network_Section/Torch_NN/data/train_data
+/Neural_Network_Section/Torch_NN/data/test_data
 /data
+
+__pycache__/
+
+*.vscode/
+
