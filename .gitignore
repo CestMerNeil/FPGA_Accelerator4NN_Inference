@@ -5,7 +5,6 @@
 # Database of the Neural Network
 /Neural_Network_Section/Torch_NN/data/train_data
 /Neural_Network_Section/Torch_NN/data/test_data
-/data
 
 __pycache__/
 
