@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "AlexNet_Cifar10_Keras",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/data\/Ao_XIE\/Internship_Waseda\/Tools_Section\/hls4ml\/AlexNet_Cifar10_Keras\/build_prj.tcl",
+          "sourceLine": "183",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "AlexNet_Cifar10_Keras"
+              }]
+          }
+        }]
+    }]}

@@ -1,0 +1,140 @@
+
+
+================================================================
+== Vitis HLS Report for 'zeropad2d_cl_array_array_ap_fixed_16_6_5_3_0_3u_config37_Pipeline_PadTopWidth'
+================================================================
+* Date:           Tue Jun 13 19:22:03 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        AlexNet_Cifar10_Keras_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  1.750 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       36|       36|  0.180 us|  0.180 us|   36|   36|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- PadTopWidth  |       34|       34|         2|          1|          1|    34|       yes|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.21>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%j = alloca i32 1"   --->   Operation 5 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i48 %layer37_out, void @empty_9, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.42ns)   --->   "%store_ln0 = store i6 0, i6 %j"   --->   Operation 7 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%j_5 = load i6 %j" [firmware/nnet_utils/nnet_padding_stream.h:53]   --->   Operation 9 'load' 'j_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 10 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.78ns)   --->   "%icmp_ln53 = icmp_eq  i6 %j_5, i6 34" [firmware/nnet_utils/nnet_padding_stream.h:53]   --->   Operation 11 'icmp' 'icmp_ln53' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 34, i64 34, i64 34"   --->   Operation 12 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.78ns)   --->   "%j_6 = add i6 %j_5, i6 1" [firmware/nnet_utils/nnet_padding_stream.h:53]   --->   Operation 13 'add' 'j_6' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln53 = br i1 %icmp_ln53, void %for.inc.split, void %PadLeft.preheader.exitStub" [firmware/nnet_utils/nnet_padding_stream.h:53]   --->   Operation 14 'br' 'br_ln53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.42ns)   --->   "%store_ln53 = store i6 %j_6, i6 %j" [firmware/nnet_utils/nnet_padding_stream.h:53]   --->   Operation 15 'store' 'store_ln53' <Predicate = (!icmp_ln53)> <Delay = 0.42>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 19 'ret' 'ret_ln0' <Predicate = (icmp_ln53)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.75>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specloopname_ln53 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26" [firmware/nnet_utils/nnet_padding_stream.h:53]   --->   Operation 16 'specloopname' 'specloopname_ln53' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (1.75ns)   --->   "%write_ln174 = write void @_ssdm_op_Write.ap_fifo.volatile.i48P0A, i48 %layer37_out, i48 0" [/data/Ao_XIE/vivado/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 17 'write' 'write_ln174' <Predicate = true> <Delay = 1.75> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 48> <Depth = 1156> <FIFO>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln53 = br void %for.inc" [firmware/nnet_utils/nnet_padding_stream.h:53]   --->   Operation 18 'br' 'br_ln53' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 1.21ns
+The critical path consists of the following:
+	'alloca' operation ('j') [2]  (0 ns)
+	'load' operation ('j', firmware/nnet_utils/nnet_padding_stream.h:53) on local variable 'j' [7]  (0 ns)
+	'add' operation ('j', firmware/nnet_utils/nnet_padding_stream.h:53) [11]  (0.781 ns)
+	'store' operation ('store_ln53', firmware/nnet_utils/nnet_padding_stream.h:53) of variable 'j', firmware/nnet_utils/nnet_padding_stream.h:53 on local variable 'j' [16]  (0.427 ns)
+	blocking operation 0.004 ns on control path)
+
+ <State 2>: 1.75ns
+The critical path consists of the following:
+	fifo write operation ('write_ln174', /data/Ao_XIE/vivado/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'layer37_out' (/data/Ao_XIE/vivado/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) [15]  (1.75 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
