@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="AlexNet_Cifar10_Keras" xd:componentRef="AlexNet_Cifar10_Keras" xd:initiationInterval="1170" xd:clockPeriod="5" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
-  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
-  <xd:arg xd:name="input_1" xd:originalName="input_1" xd:direction="in" xd:interfaceRef="input_1" xd:busTypeRef="axis" xd:dataWidth="48"/>
-  <xd:arg xd:name="layer36_out" xd:originalName="layer36_out" xd:direction="out" xd:interfaceRef="layer36_out" xd:busTypeRef="axis" xd:dataWidth="160"/>
-  <xd:latencyEstimates xd:best-case="1171" xd:worst-case="1171" xd:average-case="1171"/>
-  <xd:resourceEstimates xd:LUT="412007" xd:FF="109969" xd:BRAM="0" xd:DSP="6558"/>
-</xd:acceleratorMap>
