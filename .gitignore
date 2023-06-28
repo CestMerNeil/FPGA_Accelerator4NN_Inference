@@ -10,6 +10,5 @@ __pycache__/
 
 *.vscode/
 
-*.h5
 *.pth
 *.gz
