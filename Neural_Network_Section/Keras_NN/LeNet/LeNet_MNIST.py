@@ -1,6 +1,8 @@
 import tensorflow as tf
 from tensorflow.keras.datasets import mnist
 
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+
 x_train = x_train.astype('float32') / 255.0
 x_test = x_test.astype('float32') / 255.0
 
@@ -47,7 +49,7 @@ model.fit(
     x_train, 
     y_train, 
     batch_size=1024,
-    epochs=10000,
+    epochs=1000,
     validation_data=(x_test, y_test)
 )
 
