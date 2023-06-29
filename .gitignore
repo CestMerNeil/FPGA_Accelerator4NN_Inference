@@ -12,3 +12,4 @@ __pycache__/
 *.VSCodeCounter/
 *.pth
 *.gz
+*.mdb
