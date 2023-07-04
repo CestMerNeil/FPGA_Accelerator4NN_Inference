@@ -27,37 +27,4 @@
 
 ## Final Network
 
-```python
-def LeNet(input_tensor):
-    # Convolutional Layer 1
-    conv1 = tf.keras.layers.Conv2D(filters=16, kernel_size=5, activation='relu', padding='valid')(input_tensor)
-    pool1 = tf.keras.layers.MaxPooling2D(pool_size=2, strides=2)(conv1)
-
-    # Convolutional Layer 2
-    conv2 = tf.keras.layers.Conv2D(filters=4, kernel_size=5, activation='relu', padding='valid')(pool1)
-    pool2 = tf.keras.layers.MaxPooling2D(pool_size=2, strides=2)(conv2)
-
-    # Flatten the previous layer
-    flatten = tf.keras.layers.Flatten()(pool2)
-
-    # Fully Connected Layer 1
-    fc1 = tf.keras.layers.Dense(units=30, activation='relu')(flatten)
-
-    # Fully Connected Layer 2 (Output layer)
-    fc2 = tf.keras.layers.Dense(units=10, activation=None)(fc1)
-
-    return fc2
-
-input_tensor = tf.keras.Input(shape=(28, 28, 1))
-output_tensor = LeNet(input_tensor)
-
-model = tf.keras.Model(
-    inputs=input_tensor, 
-    outputs=output_tensor
-)
-
-model.compile(optimizer=tf.keras.optimizers.legacy.SGD(learning_rate=0.01),
-              loss=tf.keras.losses.SparseCategoricalCrossentro(from_logits=True),
-              metrics=['accuracy']
-)
-```
+![](Photos/lenet_model.png)
