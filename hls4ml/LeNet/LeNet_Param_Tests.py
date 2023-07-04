@@ -1,5 +1,6 @@
 import tensorflow as tf
 from tensorflow.keras.datasets import mnist
+from tensorflow.keras.utils import plot_model
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
@@ -44,7 +45,8 @@ model.compile(optimizer=tf.keras.optimizers.legacy.SGD(learning_rate=0.01),
               metrics=['accuracy'])
 
 model.summary()
-
+plot_model(model, to_file='Photos/lenet_model.png', show_shapes=True)
+'''
 model.fit(
     x_train, 
     y_train, 
@@ -52,3 +54,4 @@ model.fit(
     epochs=30,
     validation_data=(x_test, y_test)
 )
+'''

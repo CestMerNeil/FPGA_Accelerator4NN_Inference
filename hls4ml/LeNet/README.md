@@ -1,3 +1,7 @@
+# LeNet Arch
+
+![](Photos/LeNet_5.jpeg)
+
 # Impact of reduced layer size on the network
 
 ## Test Bench
