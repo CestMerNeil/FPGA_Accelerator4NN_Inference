@@ -1,0 +1,122 @@
+AcceleratorConfig:
+  Board: pynq-z2
+  Driver: python
+  Interface: axi_stream
+  Precision:
+    Input: float
+    Output: float
+Backend: VivadoAccelerator
+Board: pynq-z2
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    conv1:
+      Precision:
+        bias: fixed<8,5>
+        result: fixed<16,6>
+        weight: fixed<8,5>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv1_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv2:
+      Precision:
+        bias: fixed<8,5>
+        result: fixed<16,6>
+        weight: fixed<8,5>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv2_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    fc1:
+      Precision:
+        bias: fixed<8,5>
+        result: fixed<16,6>
+        weight: fixed<8,5>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    fc1_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    fc2:
+      Precision:
+        bias: fixed<8,5>
+        result: fixed<16,6>
+        weight: fixed<8,5>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    fc2_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    flatten:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    input_1:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    pool1:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    pool2:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    relu1:
+      Precision:
+        result: ufixed<4,0,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    relu2:
+      Precision:
+        result: ufixed<4,0,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    softmax:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<12,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+KerasModel: !keras_model 'LeNet_PYNQ/keras_model.h5'
+OutputDir: LeNet_PYNQ
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: EDA95cf4
