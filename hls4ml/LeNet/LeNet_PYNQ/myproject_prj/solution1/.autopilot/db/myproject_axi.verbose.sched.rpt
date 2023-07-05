@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myproject_axi'
 ================================================================
-* Date:           Mon Jul  3 05:13:10 2023
+* Date:           Tue Jul  4 23:37:50 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -187,7 +187,7 @@ The critical path consists of the following:
 
  <State 7>: 2.63ns
 The critical path consists of the following:
-	'call' operation ('call_ln0') to 'Loop_2_proc' [579]  (2.63 ns)
+	'call' operation ('call_ln0') to 'Loop_2_proc' [577]  (2.63 ns)
 
  <State 8>: 0ns
 The critical path consists of the following:

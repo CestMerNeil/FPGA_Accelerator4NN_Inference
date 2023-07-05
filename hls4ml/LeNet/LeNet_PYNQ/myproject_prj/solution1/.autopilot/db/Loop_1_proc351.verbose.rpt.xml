@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Loop_1_proc351'" level="0">
-<item name = "Date">Mon Jul  3 05:13:20 2023
+<item name = "Date">Tue Jul  4 23:38:01 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -154,8 +154,8 @@
 <column name="select_ln603_1_reg_521">16, 0, 16, 0</column>
 <column name="select_ln603_2_reg_536">16, 0, 16, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
-<column name="tmp_132_reg_444">1, 0, 1, 0</column>
-<column name="tmp_133_reg_495">8, 0, 8, 0</column>
+<column name="tmp_131_reg_444">1, 0, 1, 0</column>
+<column name="tmp_132_reg_495">8, 0, 8, 0</column>
 <column name="trunc_ln557_reg_439">63, 0, 63, 0</column>
 <column name="trunc_ln565_reg_454">52, 0, 52, 0</column>
 <column name="trunc_ln583_reg_489">16, 0, 16, 0</column>

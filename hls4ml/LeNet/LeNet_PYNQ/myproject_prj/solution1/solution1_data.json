@@ -359,16 +359,16 @@
               "InstanceName": "conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_4u_config6_U0"
             },
             {
+              "ModuleName": "conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_16u_config2_s",
+              "InstanceName": "conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_16u_config2_U0"
+            },
+            {
               "ModuleName": "dense_array_ap_fixed_30u_array_ap_fixed_16_6_5_3_0_10u_config13_s",
               "InstanceName": "dense_array_ap_fixed_30u_array_ap_fixed_16_6_5_3_0_10u_config13_U0",
               "Instances": [{
                   "ModuleName": "dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config13_s",
                   "InstanceName": "grp_dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config13_s_fu_202"
                 }]
-            },
-            {
-              "ModuleName": "conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_16u_config2_s",
-              "InstanceName": "conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_16u_config2_U0"
             },
             {
               "ModuleName": "softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config15_s",
@@ -601,8 +601,8 @@
           }],
         "Area": {
           "BRAM_18K": "0",
-          "FF": "4752",
-          "LUT": "6173",
+          "FF": "4878",
+          "LUT": "6543",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -688,8 +688,8 @@
           }],
         "Area": {
           "BRAM_18K": "0",
-          "FF": "25988",
-          "LUT": "22738",
+          "FF": "25639",
+          "LUT": "22645",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -764,12 +764,12 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.302"
+          "Estimate": "3.808"
         },
         "Area": {
           "BRAM_18K": "0",
-          "FF": "17841",
-          "LUT": "20421",
+          "FF": "16948",
+          "LUT": "19914",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -786,7 +786,7 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.302"
+          "Estimate": "3.808"
         },
         "Loops": [{
             "Name": "DataPrepare",
@@ -797,8 +797,8 @@
           }],
         "Area": {
           "BRAM_18K": "0",
-          "FF": "19368",
-          "LUT": "20857",
+          "FF": "18475",
+          "LUT": "20350",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -815,12 +815,12 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.302"
+          "Estimate": "3.991"
         },
         "Area": {
           "BRAM_18K": "0",
-          "FF": "4842",
-          "LUT": "6024",
+          "FF": "4628",
+          "LUT": "5431",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -837,12 +837,12 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.302"
+          "Estimate": "3.991"
         },
         "Area": {
           "BRAM_18K": "0",
-          "FF": "5492",
-          "LUT": "6452",
+          "FF": "5278",
+          "LUT": "5859",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -930,8 +930,8 @@
         "Area": {
           "BRAM_18K": "54",
           "DSP48E": "10",
-          "FF": "63845",
-          "LUT": "70517",
+          "FF": "62515",
+          "LUT": "69694",
           "URAM": "0"
         }
       },
@@ -1003,8 +1003,8 @@
         "Area": {
           "BRAM_18K": "55",
           "DSP48E": "10",
-          "FF": "65637",
-          "LUT": "73372",
+          "FF": "64307",
+          "LUT": "72549",
           "URAM": "0"
         }
       }
@@ -1020,7 +1020,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2023-07-03 05:15:44 UTC",
+    "Time": "2023-07-04 23:40:33 UTC",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

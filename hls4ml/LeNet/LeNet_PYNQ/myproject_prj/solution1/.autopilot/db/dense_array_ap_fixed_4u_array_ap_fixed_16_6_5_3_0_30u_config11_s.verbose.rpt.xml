@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_30u_config11_s'" level="0">
-<item name = "Date">Mon Jul  3 05:14:12 2023
+<item name = "Date">Tue Jul  4 23:38:57 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.302 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 3.808 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -51,19 +51,19 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 38, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, -, 17841, 20421, -</column>
+<column name="Instance">0, -, 16948, 19914, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 398, -</column>
 <column name="Register">-, -, 1527, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, 18, 39, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 17, 38, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s_fu_519">dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s, 0, 0, 17841, 20421, 0</column>
+<column name="grp_dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s_fu_519">dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s, 0, 0, 16948, 19914, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

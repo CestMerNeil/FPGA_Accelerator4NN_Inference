@@ -801,10 +801,10 @@ Loop_2_proc.exit:0  ret void
 
 <Node id="56" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-._crit_edge.i_ifconv:32  %tmp_130 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %lsb_index, i32 31)
+._crit_edge.i_ifconv:32  %tmp_129 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %lsb_index, i32 31)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_130"/></StgValue>
+<StgValue><ssdm name="tmp_129"/></StgValue>
 </operation>
 
 <operation id="58" st_id="7" stage="1" lat="1">
@@ -817,7 +817,7 @@ Loop_2_proc.exit:0  ret void
 
 <Node id="57" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-._crit_edge.i_ifconv:33  %xor_ln949 = xor i1 %tmp_130, true
+._crit_edge.i_ifconv:33  %xor_ln949 = xor i1 %tmp_129, true
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln949"/></StgValue>
@@ -1128,10 +1128,10 @@ Loop_2_proc.exit:0  ret void
 
 <Node id="77" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
 <![CDATA[
-._crit_edge.i_ifconv:53  %tmp_131 = call i1 @_ssdm_op_BitSelect.i1.i64.i32(i64 %m_2, i32 25)
+._crit_edge.i_ifconv:53  %tmp_130 = call i1 @_ssdm_op_BitSelect.i1.i64.i32(i64 %m_2, i32 25)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_131"/></StgValue>
+<StgValue><ssdm name="tmp_130"/></StgValue>
 </operation>
 </state>
 
@@ -1147,7 +1147,7 @@ Loop_2_proc.exit:0  ret void
 
 <Node id="78" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-._crit_edge.i_ifconv:54  %select_ln964 = select i1 %tmp_131, i8 127, i8 126
+._crit_edge.i_ifconv:54  %select_ln964 = select i1 %tmp_130, i8 127, i8 126
 
 ]]></Node>
 <StgValue><ssdm name="select_ln964"/></StgValue>
@@ -1620,13 +1620,13 @@ Loop_2_proc.exit:0  ret void
 </dataflow>
 <dataflow id="263" from="icmp_ln947_1" to="a" fromId="52" toId="56">
 </dataflow>
-<dataflow id="265" from="_ssdm_op_BitSelect.i1.i32.i32" to="tmp_130" fromId="264" toId="57">
+<dataflow id="265" from="_ssdm_op_BitSelect.i1.i32.i32" to="tmp_129" fromId="264" toId="57">
 </dataflow>
-<dataflow id="266" from="lsb_index" to="tmp_130" fromId="47" toId="57">
+<dataflow id="266" from="lsb_index" to="tmp_129" fromId="47" toId="57">
 </dataflow>
-<dataflow id="267" from="StgValue_244" to="tmp_130" fromId="244" toId="57">
+<dataflow id="267" from="StgValue_244" to="tmp_129" fromId="244" toId="57">
 </dataflow>
-<dataflow id="268" from="tmp_130" to="xor_ln949" fromId="57" toId="58">
+<dataflow id="268" from="tmp_129" to="xor_ln949" fromId="57" toId="58">
 </dataflow>
 <dataflow id="269" from="StgValue_226" to="xor_ln949" fromId="226" toId="58">
 </dataflow>
@@ -1702,13 +1702,13 @@ Loop_2_proc.exit:0  ret void
 </dataflow>
 <dataflow id="310" from="StgValue_309" to="m_5" fromId="309" toId="76">
 </dataflow>
-<dataflow id="312" from="_ssdm_op_BitSelect.i1.i64.i32" to="tmp_131" fromId="311" toId="77">
+<dataflow id="312" from="_ssdm_op_BitSelect.i1.i64.i32" to="tmp_130" fromId="311" toId="77">
 </dataflow>
-<dataflow id="313" from="m_2" to="tmp_131" fromId="75" toId="77">
+<dataflow id="313" from="m_2" to="tmp_130" fromId="75" toId="77">
 </dataflow>
-<dataflow id="314" from="StgValue_256" to="tmp_131" fromId="256" toId="77">
+<dataflow id="314" from="StgValue_256" to="tmp_130" fromId="256" toId="77">
 </dataflow>
-<dataflow id="315" from="tmp_131" to="select_ln964" fromId="77" toId="78">
+<dataflow id="315" from="tmp_130" to="select_ln964" fromId="77" toId="78">
 </dataflow>
 <dataflow id="317" from="StgValue_316" to="select_ln964" fromId="316" toId="78">
 </dataflow>

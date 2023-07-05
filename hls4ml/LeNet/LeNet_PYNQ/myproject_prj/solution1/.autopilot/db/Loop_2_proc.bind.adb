@@ -2220,7 +2220,7 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>tmp_130</name>
+						<name>tmp_129</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>33</lineNumber>
@@ -3249,7 +3249,7 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>tmp_131</name>
+						<name>tmp_130</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>33</lineNumber>
@@ -7777,7 +7777,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_130_fu_381</first>
+			<first>tmp_129_fu_381</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7785,7 +7785,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_131_fu_479</first>
+			<first>tmp_130_fu_479</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8452,7 +8452,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_131_reg_684</first>
+			<first>tmp_130_reg_684</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

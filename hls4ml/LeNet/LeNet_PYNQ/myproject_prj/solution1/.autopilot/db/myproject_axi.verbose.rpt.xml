@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject_axi'" level="0">
-<item name = "Date">Mon Jul  3 05:15:23 2023
+<item name = "Date">Tue Jul  4 23:40:11 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -53,12 +53,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 44, -</column>
 <column name="FIFO">1, -, 154, 655, -</column>
-<column name="Instance">54, 10, 65473, 72583, -</column>
+<column name="Instance">54, 10, 64143, 71760, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 90, -</column>
 <column name="Register">-, -, 10, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">19, 4, 61, 137, 0</specialColumn>
+<specialColumn name="Utilization (%)">19, 4, 60, 136, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -68,7 +68,7 @@
 <column name="Block_myproject_axi_exit35_proc_U0">Block_myproject_axi_exit35_proc, 0, 0, 162, 193, 0</column>
 <column name="Loop_1_proc351_U0">Loop_1_proc351, 0, 0, 690, 868, 0</column>
 <column name="Loop_2_proc_U0">Loop_2_proc, 0, 0, 776, 1005, 0</column>
-<column name="myproject_U0">myproject, 54, 10, 63845, 70517, 0</column>
+<column name="myproject_U0">myproject, 54, 10, 62515, 69694, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

@@ -130,7 +130,7 @@ wire   [63:0] grp_fu_445_p2;
 reg   [63:0] shl_ln958_reg_674;
 reg   [62:0] m_5_reg_679;
 wire    ap_CS_fsm_state9;
-reg   [0:0] tmp_131_reg_684;
+reg   [0:0] tmp_130_reg_684;
 wire   [7:0] select_ln964_fu_487_p3;
 reg   [7:0] select_ln964_reg_689;
 wire    ap_CS_fsm_state10;
@@ -143,7 +143,7 @@ wire   [15:0] zext_ln947_fu_341_p1;
 wire   [15:0] lshr_ln947_fu_344_p2;
 wire   [15:0] p_Result_30_fu_350_p2;
 wire   [0:0] icmp_ln947_fu_371_p2;
-wire   [0:0] tmp_130_fu_381_p3;
+wire   [0:0] tmp_129_fu_381_p3;
 wire   [15:0] add_ln949_fu_394_p2;
 wire   [0:0] p_Result_31_fu_399_p3;
 wire   [0:0] xor_ln949_fu_388_p2;
@@ -347,7 +347,7 @@ end
 always @ (posedge ap_clk) begin
     if (((icmp_ln935_reg_578 == 1'd0) & (1'b1 == ap_CS_fsm_state9))) begin
         m_5_reg_679 <= {{m_2_fu_463_p2[63:1]}};
-        tmp_131_reg_684 <= m_2_fu_463_p2[32'd25];
+        tmp_130_reg_684 <= m_2_fu_463_p2[32'd25];
     end
 end
 
@@ -644,7 +644,7 @@ always @ (tmp_V_4_fu_272_p3) begin
     end
 end
 
-assign select_ln964_fu_487_p3 = ((tmp_131_reg_684[0:0] === 1'b1) ? 8'd127 : 8'd126);
+assign select_ln964_fu_487_p3 = ((tmp_130_reg_684[0:0] === 1'b1) ? 8'd127 : 8'd126);
 
 assign sub_ln944_fu_307_p2 = (32'd16 - l_reg_591);
 
@@ -656,7 +656,7 @@ assign sub_ln964_fu_497_p2 = (8'd6 - trunc_ln943_reg_596);
 
 assign tmp_107_i_fu_507_p3 = {{p_Result_33_reg_567}, {add_ln964_fu_502_p2}};
 
-assign tmp_130_fu_381_p3 = lsb_index_reg_618[32'd31];
+assign tmp_129_fu_381_p3 = lsb_index_reg_618[32'd31];
 
 assign tmp_V_4_fu_272_p3 = ((p_Result_33_reg_567[0:0] === 1'b1) ? tmp_V_reg_573 : tmp_V_3_reg_560);
 
@@ -670,7 +670,7 @@ assign trunc_ln944_fu_312_p1 = sub_ln944_fu_307_p2[15:0];
 
 assign trunc_ln947_fu_316_p1 = sub_ln944_fu_307_p2[4:0];
 
-assign xor_ln949_fu_388_p2 = (tmp_130_fu_381_p3 ^ 1'd1);
+assign xor_ln949_fu_388_p2 = (tmp_129_fu_381_p3 ^ 1'd1);
 
 assign zext_ln947_fu_341_p1 = sub_ln947_reg_613;
 

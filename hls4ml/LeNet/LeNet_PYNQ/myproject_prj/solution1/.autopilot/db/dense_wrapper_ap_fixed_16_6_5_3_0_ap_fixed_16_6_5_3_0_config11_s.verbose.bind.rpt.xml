@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s'" level="0">
-<item name = "Date">Mon Jul  3 05:12:34 2023
+<item name = "Date">Tue Jul  4 23:37:13 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.302 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 3.808 ns, 0.62 ns</column>
 </table>
 </item>
 </section>

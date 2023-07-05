@@ -387,7 +387,7 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>empty_378</name>
+						<name>empty_375</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -677,7 +677,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>tmp_132</name>
+						<name>tmp_131</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>21</lineNumber>
@@ -1608,7 +1608,7 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>tmp_133</name>
+						<name>tmp_132</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>21</lineNumber>
@@ -1901,7 +1901,7 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>tmp_134</name>
+						<name>tmp_133</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>21</lineNumber>
@@ -6529,7 +6529,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_132_fu_159</first>
+			<first>tmp_131_fu_159</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6537,7 +6537,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_133_fu_255</first>
+			<first>tmp_132_fu_255</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6545,7 +6545,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_134_fu_290</first>
+			<first>tmp_133_fu_290</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6684,7 +6684,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>empty_378_read_fu_84</first>
+			<first>empty_375_read_fu_84</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7052,7 +7052,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_132_reg_444</first>
+			<first>tmp_131_reg_444</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7060,7 +7060,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_133_reg_495</first>
+			<first>tmp_132_reg_495</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

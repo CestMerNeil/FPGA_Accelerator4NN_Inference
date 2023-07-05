@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myproject'
 ================================================================
-* Date:           Mon Jul  3 05:14:56 2023
+* Date:           Tue Jul  4 23:39:43 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -40,8 +40,8 @@
         +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
         |dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_30u_config11_U0        |dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_30u_config11_s        |       25|       25|  0.125 us |  0.125 us |    25|    25|   none  |
         |conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_4u_config6_U0    |conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_4u_config6_s    |      155|      155|  0.778 us |  0.778 us |   155|   155|   none  |
-        |dense_array_ap_fixed_30u_array_ap_fixed_16_6_5_3_0_10u_config13_U0       |dense_array_ap_fixed_30u_array_ap_fixed_16_6_5_3_0_10u_config13_s       |        7|        7| 35.133 ns | 35.133 ns |     7|     7|   none  |
         |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_16u_config2_U0    |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_16u_config2_s    |      792|      792|  3.975 us |  3.975 us |   792|   792|   none  |
+        |dense_array_ap_fixed_30u_array_ap_fixed_16_6_5_3_0_10u_config13_U0       |dense_array_ap_fixed_30u_array_ap_fixed_16_6_5_3_0_10u_config13_s       |        7|        7| 35.133 ns | 35.133 ns |     7|     7|   none  |
         |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config15_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config15_s          |       22|       22|  0.110 us |  0.110 us |    22|    22|   none  |
         |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config5_U0              |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config5_s              |     1155|     1155|  5.797 us |  5.797 us |  1155|  1155|   none  |
         |relu_array_ap_fixed_16u_array_ap_ufixed_4_0_4_0_0_16u_relu_config4_U0    |relu_array_ap_fixed_16u_array_ap_ufixed_4_0_4_0_0_16u_relu_config4_s    |      580|      580|  2.911 us |  2.911 us |   580|   580|   none  |
@@ -64,16 +64,16 @@
 |DSP              |        -|      -|       -|      -|    -|
 |Expression       |        -|      -|       0|      2|    -|
 |FIFO             |       52|      -|    2384|   4580|    -|
-|Instance         |        2|     10|   61460|  65926|    -|
+|Instance         |        2|     10|   60130|  65103|    -|
 |Memory           |        -|      -|       -|      -|    -|
 |Multiplexer      |        -|      -|       -|      9|    -|
 |Register         |        -|      -|       1|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |       54|     10|   63845|  70517|    0|
+|Total            |       54|     10|   62515|  69694|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
-|Utilization (%)  |       19|      4|      60|    132|    0|
+|Utilization (%)  |       19|      4|      58|    131|    0|
 +-----------------+---------+-------+--------+-------+-----+
 
 + Detail: 
@@ -81,17 +81,17 @@
     +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+-------+-------+-------+-----+
     |                                 Instance                                |                                 Module                                 | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
     +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+-------+-------+-------+-----+
-    |conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_4u_config6_U0    |conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_4u_config6_s    |        0|      0|  25988|  22738|    0|
-    |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_16u_config2_U0    |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_16u_config2_s    |        0|      0|   4752|   6173|    0|
-    |dense_array_ap_fixed_30u_array_ap_fixed_16_6_5_3_0_10u_config13_U0       |dense_array_ap_fixed_30u_array_ap_fixed_16_6_5_3_0_10u_config13_s       |        0|      0|   5492|   6452|    0|
-    |dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_30u_config11_U0        |dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_30u_config11_s        |        0|      0|  19368|  20857|    0|
+    |conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_4u_config6_U0    |conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_4u_config6_s    |        0|      0|  25639|  22645|    0|
+    |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_16u_config2_U0    |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_16u_config2_s    |        0|      0|   4878|   6543|    0|
+    |dense_array_ap_fixed_30u_array_ap_fixed_16_6_5_3_0_10u_config13_U0       |dense_array_ap_fixed_30u_array_ap_fixed_16_6_5_3_0_10u_config13_s       |        0|      0|   5278|   5859|    0|
+    |dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_30u_config11_U0        |dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_30u_config11_s        |        0|      0|  18475|  20350|    0|
     |pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_U0  |pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s  |        0|      0|    642|   1121|    0|
     |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config5_U0              |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config5_s              |        0|      0|   1825|   2984|    0|
     |relu_array_ap_fixed_16u_array_ap_ufixed_4_0_4_0_0_16u_relu_config4_U0    |relu_array_ap_fixed_16u_array_ap_ufixed_4_0_4_0_0_16u_relu_config4_s    |        0|      0|    452|   1661|    0|
     |relu_array_ap_fixed_4u_array_ap_ufixed_4_0_4_0_0_4u_relu_config8_U0      |relu_array_ap_fixed_4u_array_ap_ufixed_4_0_4_0_0_4u_relu_config8_s      |        0|      0|    173|    520|    0|
     |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config15_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config15_s          |        2|     10|   2768|   3420|    0|
     +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+-------+-------+-------+-----+
-    |Total                                                                    |                                                                        |        2|     10|  61460|  65926|    0|
+    |Total                                                                    |                                                                        |        2|     10|  60130|  65103|    0|
     +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+-------+-------+-------+-----+
 
     * DSP48E: 

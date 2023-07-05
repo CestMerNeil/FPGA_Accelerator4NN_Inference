@@ -387,7 +387,7 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>empty_378</name>
+						<name>empty_375</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -677,7 +677,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>tmp_132</name>
+						<name>tmp_131</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>21</lineNumber>
@@ -1608,7 +1608,7 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>tmp_133</name>
+						<name>tmp_132</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>21</lineNumber>
@@ -1901,7 +1901,7 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>tmp_134</name>
+						<name>tmp_133</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>21</lineNumber>

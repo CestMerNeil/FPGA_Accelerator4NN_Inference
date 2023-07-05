@@ -2220,7 +2220,7 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>tmp_130</name>
+						<name>tmp_129</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>33</lineNumber>
@@ -3249,7 +3249,7 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>tmp_131</name>
+						<name>tmp_130</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ</fileDirectory>
 						<lineNumber>33</lineNumber>

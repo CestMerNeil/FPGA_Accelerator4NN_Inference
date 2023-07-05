@@ -119,4 +119,4 @@ KerasModel: !keras_model 'LeNet_PYNQ/keras_model.h5'
 OutputDir: LeNet_PYNQ
 Part: xc7z020clg400-1
 ProjectName: myproject
-Stamp: EDA95cf4
+Stamp: 5B43B3f9

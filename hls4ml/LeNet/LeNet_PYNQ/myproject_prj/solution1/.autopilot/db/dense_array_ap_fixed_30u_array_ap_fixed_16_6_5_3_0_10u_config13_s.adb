@@ -2726,7 +2726,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>4.30</m_delay>
+          <m_delay>3.99</m_delay>
           <m_topoIndex>32</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4942,11 +4942,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>4842</second>
+              <second>4628</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>6024</second>
+              <second>5431</second>
             </item>
           </second>
         </item>

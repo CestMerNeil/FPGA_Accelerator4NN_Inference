@@ -84,7 +84,7 @@ reg   [0:0] or_ln22_reg_434;
 wire   [62:0] trunc_ln557_fu_155_p1;
 reg   [62:0] trunc_ln557_reg_439;
 wire    ap_CS_fsm_state4;
-reg   [0:0] tmp_132_reg_444;
+reg   [0:0] tmp_131_reg_444;
 reg   [10:0] p_Result_i_reg_449;
 wire   [51:0] trunc_ln565_fu_177_p1;
 reg   [51:0] trunc_ln565_reg_454;
@@ -101,7 +101,7 @@ wire   [0:0] icmp_ln582_fu_245_p2;
 reg   [0:0] icmp_ln582_reg_483;
 wire   [15:0] trunc_ln583_fu_251_p1;
 reg   [15:0] trunc_ln583_reg_489;
-reg   [7:0] tmp_133_reg_495;
+reg   [7:0] tmp_132_reg_495;
 wire    ap_CS_fsm_state6;
 wire   [0:0] and_ln585_fu_327_p2;
 reg   [0:0] and_ln585_reg_505;
@@ -134,7 +134,7 @@ wire   [11:0] sub_ln581_fu_231_p2;
 wire  signed [31:0] sext_ln581_fu_265_p1;
 wire   [53:0] grp_fu_282_p1;
 wire   [31:0] bitcast_ln696_1_fu_287_p1;
-wire   [0:0] tmp_134_fu_290_p3;
+wire   [0:0] tmp_133_fu_290_p3;
 wire   [0:0] or_ln582_fu_306_p2;
 wire   [0:0] xor_ln582_fu_310_p2;
 wire   [0:0] icmp_ln585_fu_268_p2;
@@ -318,7 +318,7 @@ always @ (posedge ap_clk) begin
         icmp_ln582_reg_483 <= icmp_ln582_fu_245_p2;
         select_ln570_reg_459 <= select_ln570_fu_201_p3;
         select_ln581_reg_476 <= select_ln581_fu_237_p3;
-        tmp_133_reg_495 <= {{select_ln581_fu_237_p3[11:4]}};
+        tmp_132_reg_495 <= {{select_ln581_fu_237_p3[11:4]}};
         trunc_ln583_reg_489 <= trunc_ln583_fu_251_p1;
     end
 end
@@ -333,7 +333,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
         p_Result_i_reg_449 <= {{bitcast_ln696_fu_151_p1[62:52]}};
-        tmp_132_reg_444 <= bitcast_ln696_fu_151_p1[32'd63];
+        tmp_131_reg_444 <= bitcast_ln696_fu_151_p1[32'd63];
         trunc_ln557_reg_439 <= trunc_ln557_fu_155_p1;
         trunc_ln565_reg_454 <= trunc_ln565_fu_177_p1;
     end
@@ -548,7 +548,7 @@ assign icmp_ln582_fu_245_p2 = ((sub_ln575_fu_213_p2 == 12'd10) ? 1'b1 : 1'b0);
 
 assign icmp_ln585_fu_268_p2 = ((select_ln581_reg_476 < 12'd54) ? 1'b1 : 1'b0);
 
-assign icmp_ln603_fu_273_p2 = ((tmp_133_reg_495 == 8'd0) ? 1'b1 : 1'b0);
+assign icmp_ln603_fu_273_p2 = ((tmp_132_reg_495 == 8'd0) ? 1'b1 : 1'b0);
 
 assign in_local_V_data_0_V_din = ((or_ln603_2_reg_531[0:0] === 1'b1) ? select_ln603_2_reg_536 : 16'd0);
 
@@ -564,11 +564,11 @@ assign or_ln603_2_fu_384_p2 = (or_ln603_reg_515 | or_ln603_1_fu_379_p2);
 
 assign or_ln603_fu_356_p2 = (and_ln603_fu_350_p2 | and_ln585_1_fu_333_p2);
 
-assign select_ln570_fu_201_p3 = ((tmp_132_reg_444[0:0] === 1'b1) ? sub_ln461_fu_195_p2 : zext_ln569_fu_191_p1);
+assign select_ln570_fu_201_p3 = ((tmp_131_reg_444[0:0] === 1'b1) ? sub_ln461_fu_195_p2 : zext_ln569_fu_191_p1);
 
 assign select_ln581_fu_237_p3 = ((icmp_ln581_fu_219_p2[0:0] === 1'b1) ? add_ln581_fu_225_p2 : sub_ln581_fu_231_p2);
 
-assign select_ln588_fu_298_p3 = ((tmp_134_fu_290_p3[0:0] === 1'b1) ? 16'd65535 : 16'd0);
+assign select_ln588_fu_298_p3 = ((tmp_133_fu_290_p3[0:0] === 1'b1) ? 16'd65535 : 16'd0);
 
 assign select_ln603_1_fu_362_p3 = ((and_ln585_fu_327_p2[0:0] === 1'b1) ? select_ln588_fu_298_p3 : trunc_ln583_reg_489);
 
@@ -590,7 +590,7 @@ assign sub_ln575_fu_213_p2 = (12'd1075 - zext_ln461_fu_181_p1);
 
 assign sub_ln581_fu_231_p2 = (12'd10 - sub_ln575_fu_213_p2);
 
-assign tmp_134_fu_290_p3 = bitcast_ln696_1_fu_287_p1[32'd31];
+assign tmp_133_fu_290_p3 = bitcast_ln696_1_fu_287_p1[32'd31];
 
 assign tmp_fu_184_p3 = {{1'd1}, {trunc_ln565_reg_454}};
 
