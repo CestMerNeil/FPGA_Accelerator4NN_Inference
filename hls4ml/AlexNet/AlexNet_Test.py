@@ -9,6 +9,8 @@ from tensorflow.keras.optimizers import Adam
 seed = 42
 np.random.seed(seed)
 
+results = []
+
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 
 x_train = x_train.astype('float32') / 255
@@ -19,146 +21,112 @@ y_test = tf.keras.utils.to_categorical(y_test, 10)
 
 cifar10_classes=['airplane','automobile','bird','cat','deer','dog','frog','horse','ship','truck']
 
-model = Sequential()
+# 自动测试循环
+for i in range(5):
+    # 减小卷积数量
+    conv_units = [96, 256, 384, 384, 256]
+    conv_units = [int(unit * 0.8) for unit in conv_units]
 
-model.add(
-    Input(shape=(32, 32, 3))
-)
+    # 清除之前的模型
+    tf.keras.backend.clear_session()
 
-# Conv 1
-model.add(
-    Conv2D(
-    96,
-    kernel_size=(5, 5),
-    strides=(1, 1),
-    padding='valid',
-    name='conv1'
+    # 创建新的模型
+    model = Sequential()
+    model.add(Input(shape=(32, 32, 3)))
+
+    # 添加卷积层
+    model.add(Conv2D(
+        conv_units[0],
+        kernel_size=(5, 5),
+        strides=(1, 1),
+        padding='valid',
+        name='conv1'
+    ))
+    model.add(Activation(activation='relu', name='relu1'))
+    model.add(MaxPooling2D(pool_size=(3, 3), strides=(2, 2), padding='valid', name='pool1'))
+
+    model.add(Conv2D(
+        conv_units[1],
+        kernel_size=(5, 5),
+        strides=(1, 1),
+        padding='valid',
+        name='conv2'
+    ))
+    model.add(Activation(activation='relu', name='relu2'))
+    model.add(MaxPooling2D(pool_size=(3, 3), strides=(2, 2), padding='valid', name='pool2'))
+
+    model.add(Conv2D(
+        conv_units[2],
+        kernel_size=(3, 3),
+        strides=(1, 1),
+        padding='same',
+        name='conv3'
+    ))
+    model.add(Activation(activation='relu', name='relu3'))
+
+    model.add(Conv2D(
+        conv_units[3],
+        kernel_size=(3, 3),
+        strides=(1, 1),
+        padding='same',
+        name='conv4'
+    ))
+    model.add(Activation(activation='relu', name='relu4'))
+
+    model.add(Conv2D(
+        conv_units[4],
+        kernel_size=(3, 3),
+        strides=(1, 1),
+        padding='same',
+        name='conv5'
+    ))
+    model.add(Activation(activation='relu', name='relu5'))
+    model.add(MaxPooling2D(pool_size=(3, 3), strides=(2, 2), padding='valid', name='pool5'))
+
+    model.add(Flatten())
+
+    model.add(Dense(4096, name='fc1'))
+    model.add(Activation(activation='relu', name='relu6'))
+
+    model.add(Dense(4096, name='fc2'))
+    model.add(Activation(activation='relu', name='relu7'))
+
+    model.add(Dense(10, name='output'))
+    model.add(Activation(activation='softmax', name='softmax'))
+
+    adam = Adam(lr=0.001)
+
+    model.compile(
+        loss='categorical_crossentropy',
+        optimizer=adam,
+        metrics=['accuracy']
     )
-)
-model.add(
-    Activation(activation='relu', name='relu1')
-)
-model.add(
-    MaxPooling2D(pool_size=(3, 3), strides=(2, 2), padding='valid', name='pool1')
-)
 
-# Conv 2
-model.add(
-    Conv2D(
-    256,
-    kernel_size=(5, 5),
-    strides=(1, 1),
-    padding='valid',
-    name='conv2'
+    model.fit(
+        x_train,
+        y_train,
+        batch_size=2048,
+        epochs=30,
+        validation_data=(x_test, y_test),
+        shuffle=True,
+        verbose=1,
     )
-)
-model.add(
-    Activation(activation='relu', name='relu2')
-)
-model.add(
-    MaxPooling2D(pool_size=(3, 3), strides=(2, 2), padding='valid', name='pool2')
-)
 
-# Conv 3
-model.add(
-    Conv2D(
-    384,
-    kernel_size=(3, 3),
-    strides=(1, 1),
-    padding='same',
-    name='conv3'
-    )
-)
-model.add(
-    Activation(activation='relu', name='relu3')
-)
+    test_loss, test_acc = model.evaluate(x_test, y_test)
+    print("Test Loss:", test_loss)
+    print("Test Accuracy:", test_acc)
+    print("Conv Units:", conv_units)
+    print("----------------------------------------")
 
-# Conv 4
-model.add(
-    Conv2D(
-    384,
-    kernel_size=(3, 3),
-    strides=(1, 1),
-    padding='same',
-    name='conv4'
-    )
-)
-model.add(
-    Activation(activation='relu', name='relu4')
-)
+    # 格式化测试结果为Markdown表格行
+    result_row = f"|{i+1}|{conv_units[0]}|{conv_units[1]}|{conv_units[2]}|{conv_units[3]}|{conv_units[4]}|{test_acc}|{total_params}|"
 
-# Conv 5
-model.add(
-    Conv2D(
-    256,
-    kernel_size=(3, 3),
-    strides=(1, 1),
-    padding='same',
-    name='conv5'
-    )
-)
-model.add(
-    Activation(activation='relu', name='relu5')
-)
-model.add(
-    MaxPooling2D(pool_size=(3, 3), strides=(2, 2), padding='valid', name='pool5')
-)
+    # 将结果行添加到结果列表
+    results.append(result_row)
 
-# Flatten
-model.add(Flatten())
-
-# FC 1
-model.add(
-    Dense(
-        4096,
-        name='fc1'
-    )
-)
-model.add(
-    Activation(activation='relu', name='relu6')
-)
-
-# FC 2
-model.add(
-    Dense(
-        4096,
-        name='fc2'
-    )
-)
-model.add(
-    Activation(activation='relu', name='relu7')
-)
-
-# FC 3
-model.add(
-    Dense(
-        10,
-        name='output'
-    )
-)
-
-model.add(Activation(activation='softmax', name='softmax'))
-
-print(model.summary())
-
-adam = Adam(lr=0.001)
-
-model.compile(
-    loss='categorical_crossentropy',
-    optimizer=adam,
-    metrics=['accuracy']
-)
-
-model.fit(
-    x_train,
-    y_train,
-    batch_size=2048,
-    epochs=30,
-    validation_data=(x_test, y_test),
-    shuffle=True,
-    verbose=1,
-)
-
-test_loss, test_acc = model.evaluate(x_test, y_test)
-print("Test Loss:", test_loss)
-print("Test Accuracy:", test_acc)
+# 在README文件中写入测试结果
+with open("README.md", "a") as f:
+    f.write("| Bench| conv1 | conv2 | conv3 | conv4 | conv5| fc1| fc2| output| Acc | Total Params |\n")
+    f.write("|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|\n")
+    for result in results:
+        f.write(result + "\n")
