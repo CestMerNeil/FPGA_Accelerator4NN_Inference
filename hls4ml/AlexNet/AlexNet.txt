@@ -1,0 +1,159 @@
+Model: "model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 32, 32, 3)]       0         
+_________________________________________________________________
+conv1 (QConv2D)              (None, 30, 30, 8)         224       
+_________________________________________________________________
+relu1 (QActivation)          (None, 30, 30, 8)         0         
+_________________________________________________________________
+pool1 (MaxPooling2D)         (None, 14, 14, 8)         0         
+_________________________________________________________________
+conv2 (QConv2D)              (None, 14, 14, 16)        3216      
+_________________________________________________________________
+relu2 (QActivation)          (None, 14, 14, 16)        0         
+_________________________________________________________________
+pool2 (MaxPooling2D)         (None, 7, 7, 16)          0         
+_________________________________________________________________
+conv3 (QConv2D)              (None, 7, 7, 16)          2320      
+_________________________________________________________________
+relu3 (QActivation)          (None, 7, 7, 16)          0         
+_________________________________________________________________
+conv4 (QConv2D)              (None, 7, 7, 16)          2320      
+_________________________________________________________________
+relu4 (QActivation)          (None, 7, 7, 16)          0         
+_________________________________________________________________
+conv5 (QConv2D)              (None, 7, 7, 8)           1160      
+_________________________________________________________________
+relu5 (QActivation)          (None, 7, 7, 8)           0         
+_________________________________________________________________
+pool5 (MaxPooling2D)         (None, 4, 4, 8)           0         
+_________________________________________________________________
+flatten (Flatten)            (None, 128)               0         
+_________________________________________________________________
+fc1 (QDense)                 (None, 16)                2064      
+_________________________________________________________________
+relu6 (QActivation)          (None, 16)                0         
+_________________________________________________________________
+fc2 (QDense)                 (None, 32)                544       
+_________________________________________________________________
+relu7 (QActivation)          (None, 32)                0         
+_________________________________________________________________
+output (QDense)              (None, 10)                330       
+_________________________________________________________________
+softmax (Activation)         (None, 10)                0         
+=================================================================
+Total params: 12,178
+Trainable params: 12,178
+Non-trainable params: 0
+_________________________________________________________________
+
+x = QConv2D(
+    8,
+    kernel_size=(3, 3),
+    strides=(1, 1),
+    padding='valid',
+    name='conv1',
+    kernel_quantizer=quantized_bits(6, 0, alpha=1),
+    bias_quantizer=quantized_bits(6, 0, alpha=1),
+    kernel_initializer='lecun_uniform',
+    kernel_regularizer=l2(0.0001)
+)(input_layer)
+x = QActivation(activation=quantized_relu(6), name='relu1')(x)
+x = MaxPooling2D(pool_size=(3, 3), strides=(2, 2), padding='valid', name='pool1')(x)
+
+# conv2
+x = QConv2D(
+    16,
+    kernel_size=(5, 5),
+    strides=(1, 1),
+    padding='same',
+    name='conv2',
+    kernel_quantizer=quantized_bits(6, 0, alpha=1),
+    bias_quantizer=quantized_bits(6, 0, alpha=1),
+    kernel_initializer='lecun_uniform',
+    kernel_regularizer=l2(0.0001)
+)(x)
+x = QActivation(activation=quantized_relu(6), name='relu2')(x)
+x = MaxPooling2D(pool_size=(3, 3), strides=(2, 2), padding='same', name='pool2')(x)
+
+# conv3
+x = QConv2D(
+    16,
+    kernel_size=(3, 3),
+    strides=(1, 1),
+    padding='same',
+    name='conv3',
+    kernel_quantizer=quantized_bits(6, 0, alpha=1),
+    bias_quantizer=quantized_bits(6, 0, alpha=1),
+    kernel_initializer='lecun_uniform',
+    kernel_regularizer=l2(0.0001)
+)(x)
+x = QActivation(activation=quantized_relu(6), name='relu3')(x)
+
+# conv4
+x = QConv2D(
+    16,
+    kernel_size=(3, 3),
+    strides=(1, 1),
+    padding='same',
+    name='conv4',
+    kernel_quantizer=quantized_bits(6, 0, alpha=1),
+    bias_quantizer=quantized_bits(6, 0, alpha=1),
+    kernel_initializer='lecun_uniform',
+    kernel_regularizer=l2(0.0001)
+)(x)
+x = QActivation(activation=quantized_relu(6), name='relu4')(x)
+
+# conv5
+x = QConv2D(
+    8,
+    kernel_size=(3, 3),
+    strides=(1, 1),
+    padding='same',
+    name='conv5',
+    kernel_quantizer=quantized_bits(6, 0, alpha=1),
+    bias_quantizer=quantized_bits(6, 0, alpha=1),
+    kernel_initializer='lecun_uniform',
+    kernel_regularizer=l1(0.0001)
+)(x)
+x = QActivation(activation=quantized_relu(6), name='relu5')(x)
+x = MaxPooling2D(pool_size=(3, 3), strides=(2, 2), padding='same', name='pool5')(x)
+
+# FC
+x = Flatten()(x)
+x = QDense(
+    16,
+    name='fc1',
+    kernel_quantizer=quantized_bits(6, 0, alpha=1),
+    bias_quantizer=quantized_bits(6, 0, alpha=1),
+    kernel_initializer='lecun_uniform',
+    kernel_regularizer=l2(0.0001)
+)(x)
+x = QActivation(activation=quantized_relu(6), name='relu6')(x)
+
+x = QDense(
+    32,
+    name='fc2',
+    kernel_quantizer=quantized_bits(6, 0, alpha=1),
+    bias_quantizer=quantized_bits(6, 0, alpha=1),
+    kernel_initializer='lecun_uniform',
+    kernel_regularizer=l2(0.0001)
+)(x)
+x = QActivation(activation=quantized_relu(6), name='relu7')(x)
+
+x = QDense(
+    10,
+    name='output',
+    kernel_quantizer=quantized_bits(6, 0, alpha=1),
+    bias_quantizer=quantized_bits(6, 0, alpha=1),
+    kernel_initializer='lecun_uniform',
+    kernel_regularizer=l1(0.0001)
+)(x)
+output_layer = Activation(activation='softmax', name='softmax')(x)
+
+# Gene model
+model = Model(inputs=input_layer, outputs=output_layer)
+
+model.summary()
