@@ -52,6 +52,7 @@
 | Device | Total Time | Inferences / Sec |  
 |---------|---------|---------|
 |Xilinx XUP PYNQ-Z2 | 0.730162 | 13695.5908|
+|Xilinx Alveo U50 | N/A | N/A|
 |Intel Core i9-9900K| 4.662593 | 2144.7292|
 |Apple M2 Pro|3.450132|2898.4399|
 |NVIDIA Tesla T4|1.350541|7404.4395|
