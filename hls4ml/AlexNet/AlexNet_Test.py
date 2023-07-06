@@ -152,9 +152,13 @@ model.compile(
 model.fit(
     x_train,
     y_train,
-    batch_size=512,
-    epochs=20,
+    batch_size=2048,
+    epochs=30,
     validation_data=(x_test, y_test),
     shuffle=True,
     verbose=1,
 )
+
+test_loss, test_acc = model.evaluate(x_test, y_test)
+print("Test Loss:", test_loss)
+print("Test Accuracy:", test_acc)
