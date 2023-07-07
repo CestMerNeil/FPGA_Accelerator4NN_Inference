@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Activation, Flatten, Conv2D, MaxPooling2D, Input
+from tensorflow.keras.layers import Dense, Activation, Flatten, Conv2D, MaxPooling2D, InputLayer
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.optimizers import Adam
@@ -22,17 +22,28 @@ y_test = tf.keras.utils.to_categorical(y_test, 10)
 cifar10_classes=['airplane','automobile','bird','cat','deer','dog','frog','horse','ship','truck']
 
 # 自动测试循环
-for i in range(5):
+for i in range(30):
     # 减小卷积数量
     conv_units = [96, 256, 384, 384, 256]
-    conv_units = [int(unit * 0.8) for unit in conv_units]
+    #conv_units = [int(unit * 0.8) for unit in conv_units]
+
+    dense_units = [4096, 2048]
+    #dense_units = [int(unit * 0.8) for unit in dense_units]
+
+    conv_units = [int(unit * (0.9 ** i)) for unit in conv_units]
+    dense_units = [int(unit * (0.9 ** i)) for unit in dense_units]
 
     # 清除之前的模型
     tf.keras.backend.clear_session()
 
     # 创建新的模型
     model = Sequential()
-    model.add(Input(shape=(32, 32, 3)))
+    model.add(
+            InputLayer(
+                input_shape=(32, 32, 3),
+                name="input"
+                )
+            )
 
     # 添加卷积层
     model.add(Conv2D(
@@ -85,16 +96,18 @@ for i in range(5):
 
     model.add(Flatten())
 
-    model.add(Dense(4096, name='fc1'))
+    model.add(Dense(dense_units[0], name='fc1'))
     model.add(Activation(activation='relu', name='relu6'))
 
-    model.add(Dense(4096, name='fc2'))
+    model.add(Dense(dense_units[1], name='fc2'))
     model.add(Activation(activation='relu', name='relu7'))
 
     model.add(Dense(10, name='output'))
     model.add(Activation(activation='softmax', name='softmax'))
 
-    adam = Adam(lr=0.001)
+    print(model.summary())
+
+    adam = Adam(learning_rate=0.001)
 
     model.compile(
         loss='categorical_crossentropy',
@@ -106,7 +119,7 @@ for i in range(5):
         x_train,
         y_train,
         batch_size=2048,
-        epochs=30,
+        epochs=50,
         validation_data=(x_test, y_test),
         shuffle=True,
         verbose=1,
@@ -118,15 +131,19 @@ for i in range(5):
     print("Conv Units:", conv_units)
     print("----------------------------------------")
 
+    total_params = model.count_params()
+
     # 格式化测试结果为Markdown表格行
-    result_row = f"|{i+1}|{conv_units[0]}|{conv_units[1]}|{conv_units[2]}|{conv_units[3]}|{conv_units[4]}|{test_acc}|{total_params}|"
+    result_row = f"|{i+1}|{conv_units[0]}|{conv_units[1]}|{conv_units[2]}|{conv_units[3]}|{conv_units[4]}|{dense_units[0]}|{dense_units[1]}|{test_acc}|{total_params}|"
 
     # 将结果行添加到结果列表
     results.append(result_row)
 
+    print(results)
+
 # 在README文件中写入测试结果
 with open("README.md", "a") as f:
-    f.write("| Bench| conv1 | conv2 | conv3 | conv4 | conv5| fc1| fc2| output| Acc | Total Params |\n")
-    f.write("|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|\n")
+    f.write("| Bench| conv1 | conv2 | conv3 | conv4 | conv5| fc1| fc2| Acc | Total Params |\n")
+    f.write("|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|\n")
     for result in results:
         f.write(result + "\n")
