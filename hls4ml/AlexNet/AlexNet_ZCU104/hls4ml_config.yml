@@ -1,0 +1,214 @@
+AcceleratorConfig:
+  Board: pynq-z2
+  Driver: python
+  Interface: axi_stream
+  Precision:
+    Input: float
+    Output: float
+Backend: VivadoAccelerator
+Board: zcu104
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    conv1:
+      Precision:
+        bias: fixed<16,7>
+        result: fixed<16,6>
+        weight: fixed<16,7>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv1_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv2:
+      Precision:
+        bias: fixed<16,7>
+        result: fixed<16,6>
+        weight: fixed<16,7>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv2_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv3:
+      Precision:
+        bias: fixed<16,7>
+        result: fixed<16,6>
+        weight: fixed<16,7>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv3_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv4:
+      Precision:
+        bias: fixed<16,7>
+        result: fixed<16,6>
+        weight: fixed<16,7>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv4_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv5:
+      Precision:
+        bias: fixed<16,7>
+        result: fixed<16,6>
+        weight: fixed<16,7>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    conv5_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    fc1:
+      Precision:
+        bias: fixed<16,7>
+        result: fixed<16,6>
+        weight: fixed<16,7>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    fc1_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    fc2:
+      Precision:
+        bias: fixed<16,7>
+        result: fixed<16,6>
+        weight: fixed<16,7>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    fc2_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    flatten_4:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    input_5:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    output:
+      Precision:
+        bias: fixed<16,7>
+        result: fixed<16,6>
+        weight: fixed<16,7>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    output_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    pool1:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    pool2:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    pool5:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    relu1:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    relu2:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    relu3:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    relu4:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    relu5:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    relu6:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    relu7:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Latency
+      Trace: false
+    softmax:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+KerasModel: !keras_model 'AlexNet_ZCU104/keras_model.h5'
+OutputDir: AlexNet_ZCU104
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: 8E689Ccd
