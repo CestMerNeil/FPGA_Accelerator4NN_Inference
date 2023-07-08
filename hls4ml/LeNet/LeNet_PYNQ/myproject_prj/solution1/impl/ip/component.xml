@@ -1603,8 +1603,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Myproject_axi</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2113104340</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-07-04T23:40:48Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2113109604</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-07-08T15:24:45Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>

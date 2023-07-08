@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jul  4 23:41:41 2023" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Jul  8 15:25:36 2023" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -2364,7 +2364,7 @@
         <PERIPHERAL INSTANCE="hier_0_myproject_axi_0"/>
       </PERIPHERALS>
     </MODULE>
-    <MODULE COREREVISION="2113104340" FULLNAME="/hier_0/myproject_axi_0" HWVERSION="1.0" INSTANCE="hier_0_myproject_axi_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="myproject_axi" VLNV="xilinx.com:hls:myproject_axi:1.0">
+    <MODULE COREREVISION="2113109604" FULLNAME="/hier_0/myproject_axi_0" HWVERSION="1.0" INSTANCE="hier_0_myproject_axi_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="myproject_axi" VLNV="xilinx.com:hls:myproject_axi:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="design_1_myproject_axi_0_0"/>

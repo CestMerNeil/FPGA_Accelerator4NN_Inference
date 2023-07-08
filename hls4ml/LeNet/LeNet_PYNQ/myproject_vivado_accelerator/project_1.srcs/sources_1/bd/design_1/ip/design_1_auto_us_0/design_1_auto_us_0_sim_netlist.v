@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Tue Jul  4 23:43:22 2023
+// Date        : Sat Jul  8 15:27:15 2023
 // Host        : 6307b0c947c6 running 64-bit unknown
 // Command     : write_verilog -force -mode funcsim
 //               /home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_sim_netlist.v

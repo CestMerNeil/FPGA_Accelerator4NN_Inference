@@ -18,29 +18,29 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17156 
+INFO: Helper process launched with PID 14126 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1852.305 ; gain = 201.688 ; free physical = 15857 ; free virtual = 39676
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1853.340 ; gain = 201.719 ; free physical = 29292 ; free virtual = 50539
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:502]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1673]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (1#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (1#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (2#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1673]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2078]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (3#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (3#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_auto_us_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_0' has 34 connections declared, but only 33 given [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2205]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (4#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2078]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2531]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (5#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (5#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_auto_us_1_stub.v:6]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_1' has 40 connections declared, but only 39 given [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2682]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (6#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2531]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (7#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (7#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_xbar_0_stub.v:6]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'design_1_xbar_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1073]
 WARNING: [Synth 8-689] width (64) of port connection 's_axi_rdata' does not match port width (128) of module 'design_1_xbar_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1090]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'design_1_xbar_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1091]
@@ -49,24 +49,24 @@ WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not matc
 WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 78 connections declared, but only 76 given [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1023]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (8#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:502]
 INFO: [Synth 8-6157] synthesizing module 'hier_0_imp_MHUNTD' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1402]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (9#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (9#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_axi_dma_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 64 connections declared, but only 58 given [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1601]
-INFO: [Synth 8-6157] synthesizing module 'design_1_myproject_axi_0_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_myproject_axi_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_myproject_axi_0_0' (10#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_myproject_axi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_myproject_axi_0_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_myproject_axi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_myproject_axi_0_0' (10#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_myproject_axi_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'hier_0_imp_MHUNTD' (11#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1402]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (12#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (12#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 110 connections declared, but only 104 given [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:327]
 INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1102]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2241]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (13#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (13#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_auto_pc_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 59 connections declared, but only 56 given [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2472]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (14#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2241]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (15#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1102]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (16#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-17021-6307b0c947c6/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (16#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/.Xil/Vivado-14083-6307b0c947c6/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:493]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (17#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (18#1) [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
@@ -141,7 +141,7 @@ WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port S01_ACLK
 WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port S01_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1918.023 ; gain = 267.406 ; free physical = 15750 ; free virtual = 39570
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1920.059 ; gain = 268.438 ; free physical = 29326 ; free virtual = 50573
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -154,12 +154,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1923.961 ; gain = 273.344 ; free physical = 15737 ; free virtual = 39556
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1923.027 ; gain = 271.406 ; free physical = 29323 ; free virtual = 50571
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1923.961 ; gain = 273.344 ; free physical = 15737 ; free virtual = 39556
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1923.027 ; gain = 271.406 ; free physical = 29323 ; free virtual = 50571
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1923.961 ; gain = 0.000 ; free physical = 15738 ; free virtual = 39558
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1923.027 ; gain = 0.000 ; free physical = 29316 ; free virtual = 50563
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -186,20 +186,20 @@ Parsing XDC File [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproje
 Finished Parsing XDC File [/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2032.773 ; gain = 0.000 ; free physical = 15548 ; free virtual = 39368
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2032.840 ; gain = 0.000 ; free physical = 29227 ; free virtual = 50475
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2032.773 ; gain = 0.000 ; free physical = 15548 ; free virtual = 39368
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2032.840 ; gain = 0.000 ; free physical = 29227 ; free virtual = 50475
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15601 ; free virtual = 39421
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29300 ; free virtual = 50548
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15600 ; free virtual = 39420
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29300 ; free virtual = 50548
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -477,10 +477,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon. (constra
 Applied set_property DONT_TOUCH = true for design_1_i/hier_0/axi_dma_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/hier_0/myproject_axi_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15593 ; free virtual = 39413
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29297 ; free virtual = 50545
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15594 ; free virtual = 39415
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29298 ; free virtual = 50546
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -536,7 +536,7 @@ WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port S01_ACLK
 WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port S01_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15552 ; free virtual = 39376
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29286 ; free virtual = 50537
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -548,13 +548,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15082 ; free virtual = 38911
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29161 ; free virtual = 50413
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15083 ; free virtual = 38912
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29161 ; free virtual = 50413
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -566,7 +566,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15083 ; free virtual = 38912
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29161 ; free virtual = 50413
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -590,13 +590,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15005 ; free virtual = 38834
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29161 ; free virtual = 50413
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15005 ; free virtual = 38834
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29161 ; free virtual = 50413
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -615,25 +615,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15004 ; free virtual = 38833
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29161 ; free virtual = 50413
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15004 ; free virtual = 38833
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29161 ; free virtual = 50413
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15004 ; free virtual = 38833
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29161 ; free virtual = 50413
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15004 ; free virtual = 38833
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29161 ; free virtual = 50413
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -684,26 +684,26 @@ Report Instance Areas:
 |9     |    hier_0           |hier_0_imp_MHUNTD           |   297|
 +------+---------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15004 ; free virtual = 38833
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29161 ; free virtual = 50413
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2032.773 ; gain = 273.344 ; free physical = 15057 ; free virtual = 38886
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2032.773 ; gain = 382.156 ; free physical = 15056 ; free virtual = 38885
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2032.840 ; gain = 271.406 ; free physical = 29219 ; free virtual = 50471
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2032.840 ; gain = 381.219 ; free physical = 29219 ; free virtual = 50471
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2032.773 ; gain = 0.000 ; free physical = 15120 ; free virtual = 38949
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2032.840 ; gain = 0.000 ; free physical = 29288 ; free virtual = 50540
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2032.773 ; gain = 0.000 ; free physical = 15051 ; free virtual = 38881
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2032.840 ; gain = 0.000 ; free physical = 29226 ; free virtual = 50478
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 48 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:57 . Memory (MB): peak = 2035.516 ; gain = 603.484 ; free physical = 15177 ; free virtual = 39006
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2035.516 ; gain = 0.000 ; free physical = 15177 ; free virtual = 39006
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:55 . Memory (MB): peak = 2035.582 ; gain = 603.547 ; free physical = 29350 ; free virtual = 50602
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2035.582 ; gain = 0.000 ; free physical = 29350 ; free virtual = 50602
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/jovyan/Internship_Waseda/hls4ml/LeNet/LeNet_PYNQ/myproject_vivado_accelerator/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul  4 23:56:09 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  8 15:39:16 2023...
