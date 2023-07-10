@@ -1,0 +1,55 @@
+AcceleratorConfig:
+  Board: pynq-z2
+  Driver: python
+  Interface: axi_stream
+  Precision:
+    Input: float
+    Output: float
+Backend: VivadoAccelerator
+Board: pynq-z2
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    dense:
+      Precision:
+        bias: fixed<16,6>
+        result: fixed<16,6>
+        weight: fixed<16,6>
+      Strategy: Stable
+      Trace: false
+    dense_linear:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    flatten:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    flatten_input:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    spiking_layer:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    spiking_layer_1:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    spiking_layer_2:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<12,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+KerasModel: !keras_model 'AlexNet_PYNQ/keras_model.h5'
+OutputDir: AlexNet_PYNQ
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: fDB9AcD8

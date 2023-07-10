@@ -1,0 +1,841 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jul 10 04:30:51 2023
+# Process ID: 17552
+# Current directory: /home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1
+# Command line: vivado -log design_1_myproject_axi_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_myproject_axi_0_0.tcl
+# Log file: /home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/design_1_myproject_axi_0_0.vds
+# Journal file: /home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_myproject_axi_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_prj'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top design_1_myproject_axi_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17687 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1837.879 ; gain = 201.719 ; free physical = 22171 ; free virtual = 44512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_myproject_axi_0_0' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ip/design_1_myproject_axi_0_0/synth/design_1_myproject_axi_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Loop_1_proc58' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 11'b00000000001 
+	Parameter ap_ST_fsm_state2 bound to: 11'b00000000010 
+	Parameter ap_ST_fsm_state3 bound to: 11'b00000000100 
+	Parameter ap_ST_fsm_state4 bound to: 11'b00000001000 
+	Parameter ap_ST_fsm_state5 bound to: 11'b00000010000 
+	Parameter ap_ST_fsm_state6 bound to: 11'b00000100000 
+	Parameter ap_ST_fsm_state7 bound to: 11'b00001000000 
+	Parameter ap_ST_fsm_state8 bound to: 11'b00010000000 
+	Parameter ap_ST_fsm_state9 bound to: 11'b00100000000 
+	Parameter ap_ST_fsm_state10 bound to: 11'b01000000000 
+	Parameter ap_ST_fsm_state11 bound to: 11'b10000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:56]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_fpext_32ns_64_3_1' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi_fpext_32ns_64_3_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'myproject_axi_ap_fpext_1_no_dsp_32' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/ip/myproject_axi_ap_fpext_1_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at '/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/ip/myproject_axi_ap_fpext_1_no_dsp_32.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'myproject_axi_ap_fpext_1_no_dsp_32' (11#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/ip/myproject_axi_ap_fpext_1_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_fpext_32ns_64_3_1' (12#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi_fpext_32ns_64_3_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_ashr_54ns_32ns_54_2_1' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi_ashr_54ns_32ns_54_2_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 54 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 54 - type: integer 
+	Parameter OP bound to: 2 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter K bound to: 16 - type: integer 
+	Parameter LATENCY bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_ashr_54ns_32ns_54_2_1' (13#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi_ashr_54ns_32ns_54_2_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (14#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (15#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (16#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized0' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized0' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized0' (16#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized0' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized0' (16#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized0' (16#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/regslice_core.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:578]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:592]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:594]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:596]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:598]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:600]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:602]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:604]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:606]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:608]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:614]
+WARNING: [Synth 8-6014] Unused sequential element and_ln203_reg_1481_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:297]
+WARNING: [Synth 8-6014] Unused sequential element shl_ln203_reg_1475_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:298]
+WARNING: [Synth 8-6014] Unused sequential element and_ln585_reg_1411_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:304]
+WARNING: [Synth 8-6014] Unused sequential element and_ln603_reg_1416_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:305]
+WARNING: [Synth 8-6014] Unused sequential element or_ln603_reg_1421_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:306]
+WARNING: [Synth 8-6014] Unused sequential element select_ln603_1_reg_1427_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:307]
+WARNING: [Synth 8-6014] Unused sequential element ashr_ln586_reg_1432_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:313]
+WARNING: [Synth 8-6014] Unused sequential element or_ln603_2_reg_1437_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:314]
+WARNING: [Synth 8-6014] Unused sequential element ctype_data_V_fu_204_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:320]
+WARNING: [Synth 8-6014] Unused sequential element empty_83_reg_1453_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:326]
+WARNING: [Synth 8-6014] Unused sequential element icmp_ln203_reg_1458_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:327]
+WARNING: [Synth 8-6014] Unused sequential element shl_ln_reg_1447_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:328]
+WARNING: [Synth 8-6014] Unused sequential element sub_ln203_1_reg_1470_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:329]
+WARNING: [Synth 8-6014] Unused sequential element sub_ln203_reg_1465_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:330]
+WARNING: [Synth 8-6014] Unused sequential element trunc_ln556_reg_1345_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:338]
+WARNING: [Synth 8-6014] Unused sequential element icmp_ln571_reg_1370_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:351]
+WARNING: [Synth 8-6014] Unused sequential element icmp_ln581_reg_1376_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:352]
+WARNING: [Synth 8-6014] Unused sequential element icmp_ln582_reg_1389_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:353]
+WARNING: [Synth 8-6014] Unused sequential element tmp_4_reg_1401_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:356]
+WARNING: [Synth 8-6014] Unused sequential element trunc_ln583_reg_1395_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:357]
+WARNING: [Synth 8-6014] Unused sequential element in_data_tmp_reg_1339_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:363]
+WARNING: [Synth 8-6014] Unused sequential element select_ln603_2_reg_1442_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:375]
+WARNING: [Synth 8-6014] Unused sequential element shl_ln_reg_1447_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:592]
+WARNING: [Synth 8-6014] Unused sequential element empty_83_reg_1453_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:592]
+WARNING: [Synth 8-6014] Unused sequential element sub_ln203_reg_1465_reg was removed.  [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:594]
+INFO: [Synth 8-6155] done synthesizing module 'Loop_1_proc58' (17#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_1_proc58.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_array_ap_fixed_784u_array_ap_fixed_16_6_5_3_0_10u_config6_s' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/dense_array_ap_fixed_784u_array_ap_fixed_16_6_5_3_0_10u_config6_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/dense_array_ap_fixed_784u_array_ap_fixed_16_6_5_3_0_10u_config6_s.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'dense_array_ap_fixed_784u_array_ap_fixed_16_6_5_3_0_10u_config6_s' (18#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/dense_array_ap_fixed_784u_array_ap_fixed_16_6_5_3_0_10u_config6_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject' (19#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Block_myproject_axi_exit875_proc' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Block_myproject_axi_exit875_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Block_myproject_axi_exit875_proc.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'Block_myproject_axi_exit875_proc' (20#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Block_myproject_axi_exit875_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Loop_2_proc' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 12'b000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 12'b000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 12'b000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 12'b000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 12'b000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 12'b000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 12'b000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 12'b000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 12'b000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 12'b001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 12'b010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 12'b100000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:76]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_104_16_1_1' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi_mux_104_16_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 16 - type: integer 
+	Parameter din4_WIDTH bound to: 16 - type: integer 
+	Parameter din5_WIDTH bound to: 16 - type: integer 
+	Parameter din6_WIDTH bound to: 16 - type: integer 
+	Parameter din7_WIDTH bound to: 16 - type: integer 
+	Parameter din8_WIDTH bound to: 16 - type: integer 
+	Parameter din9_WIDTH bound to: 16 - type: integer 
+	Parameter din10_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_104_16_1_1' (21#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi_mux_104_16_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_lshr_32ns_32ns_32_2_1' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi_lshr_32ns_32ns_32_2_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+	Parameter OP bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter K bound to: 16 - type: integer 
+	Parameter LATENCY bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_lshr_32ns_32ns_32_2_1' (22#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi_lshr_32ns_32ns_32_2_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_shl_64ns_32ns_64_2_1' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi_shl_64ns_32ns_64_2_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+	Parameter OP bound to: 0 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter K bound to: 16 - type: integer 
+	Parameter LATENCY bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_shl_64ns_32ns_64_2_1' (23#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi_shl_64ns_32ns_64_2_1.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:613]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:623]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:647]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:661]
+INFO: [Synth 8-6155] done synthesizing module 'Loop_2_proc' (24#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w1_d2_A' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w1_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w1_d2_A_shiftReg' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w1_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w1_d2_A_shiftReg' (25#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w1_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w1_d2_A' (26#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w1_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d1_A' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w16_d1_A.v:42]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b01 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d1_A_shiftReg' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w16_d1_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d1_A_shiftReg' (27#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w16_d1_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d1_A' (28#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w16_d1_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d2_A' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w16_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d2_A_shiftReg' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w16_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d2_A_shiftReg' (29#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w16_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d2_A' (30#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/fifo_w16_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Block_myproject_axi_exit875_proc_U0' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/start_for_Block_myproject_axi_exit875_proc_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Block_myproject_axi_exit875_proc_U0_shiftReg' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/start_for_Block_myproject_axi_exit875_proc_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Block_myproject_axi_exit875_proc_U0_shiftReg' (31#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/start_for_Block_myproject_axi_exit875_proc_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Block_myproject_axi_exit875_proc_U0' (32#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/start_for_Block_myproject_axi_exit875_proc_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi' (33#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/myproject_axi.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_myproject_axi_0_0' (34#1) [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ip/design_1_myproject_axi_0_0/synth/design_1_myproject_axi_0_0.v:58]
+WARNING: [Synth 8-3331] design fifo_w16_d1_A_shiftReg has unconnected port a[0]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[63]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[62]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[61]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[60]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[59]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[58]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[57]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[56]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[55]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[54]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[53]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[52]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[51]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[50]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[49]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[48]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[47]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[46]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[45]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[44]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[43]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[42]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[41]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[40]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[39]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[38]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[37]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[36]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[35]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[34]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[33]
+WARNING: [Synth 8-3331] design myproject_axi_shl_64ns_32ns_64_2_1 has unconnected port din1[32]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[53]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[52]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[51]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[50]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[49]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[48]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[47]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[46]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[45]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[44]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[43]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[42]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[41]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[40]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[39]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[38]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[37]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[36]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[35]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[34]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[33]
+WARNING: [Synth 8-3331] design myproject_axi_ashr_54ns_32ns_54_2_1 has unconnected port din1[32]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized1 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized1 has unconnected port CE
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1951.566 ; gain = 315.406 ; free physical = 21909 ; free virtual = 44255
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1954.535 ; gain = 318.375 ; free physical = 21883 ; free virtual = 44229
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1954.535 ; gain = 318.375 ; free physical = 21883 ; free virtual = 44229
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1957.504 ; gain = 0.000 ; free physical = 21844 ; free virtual = 44190
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ip/design_1_myproject_axi_0_0/constraints/myproject_axi_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ip/design_1_myproject_axi_0_0/constraints/myproject_axi_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2110.348 ; gain = 0.000 ; free physical = 21661 ; free virtual = 44007
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2110.348 ; gain = 0.000 ; free physical = 21657 ; free virtual = 44003
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21802 ; free virtual = 44152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21802 ; free virtual = 44151
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21803 ; free virtual = 44150
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_5_reg_679_reg' and it is trimmed from '63' to '23' bits. [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:349]
+WARNING: [Synth 8-3936] Found unconnected internal register 'trunc_ln944_reg_608_reg' and it is trimmed from '16' to '4' bits. [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:364]
+INFO: [Synth 8-4471] merging register 'trunc_ln943_reg_596_reg[5:0]' into 'l_reg_591_reg[5:0]' [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:315]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21887 ; free virtual = 44240
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/Loop_1_proc58_U0/myproject_axi_fpext_32ns_64_3_1_U1/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/Loop_1_proc58_U0/myproject_axi_fpext_32ns_64_3_1_U1/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_1_proc58_U0/myproject_axi_fpext_32ns_64_3_1_U1/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/Loop_1_proc58_U0/myproject_axi_fpext_32ns_64_3_1_U1/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_1_proc58_U0/myproject_axi_fpext_32ns_64_3_1_U1/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/Loop_1_proc58_U0/myproject_axi_fpext_32ns_64_3_1_U1/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'shl_ln958_reg_674_reg' and it is trimmed from '64' to '26' bits. [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:343]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln958_reg_669_reg' and it is trimmed from '32' to '26' bits. [/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/ipshared/2c70/hdl/verilog/Loop_2_proc.v:342]
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[2]' (FDE) to 'inst/Loop_2_proc_U0/trunc_ln944_reg_608_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln947_reg_613_reg[1]' (FDE) to 'inst/Loop_2_proc_U0/trunc_ln944_reg_608_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[0]' (FDE) to 'inst/Loop_2_proc_U0/trunc_ln944_reg_608_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[1]' (FDE) to 'inst/Loop_2_proc_U0/trunc_ln944_reg_608_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[3]' (FDE) to 'inst/Loop_2_proc_U0/trunc_ln944_reg_608_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[5]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[6]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[7]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[8]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[9]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[10]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[11]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[12]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[13]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[14]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[15]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[16]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[17]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[18]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[19]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[20]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[21]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[22]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[23]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[24]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[25]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[26]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[27]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[28]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[29]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[30]' (FDE) to 'inst/Loop_2_proc_U0/sub_ln944_reg_601_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][24]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][26]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][27]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][28]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][29]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][30]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][31]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][32]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][33]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][34]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][35]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][36]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][37]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][38]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][39]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][40]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][41]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][42]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][43]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][44]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][45]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][46]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][47]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][48]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][49]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][50]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][51]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][52]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][53]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][54]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][55]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][56]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][57]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][58]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][59]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][60]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][61]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][62]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][63]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][25]' (FDR) to 'inst/Loop_2_proc_U0/myproject_axi_lshr_32ns_32ns_32_2_1_U49/dout_array_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'inst/myproject_U0/dense_array_ap_fixed_784u_array_ap_fixed_16_6_5_3_0_10u_config6_U0/ap_CS_fsm_reg[0]' (FDSE) to 'inst/Block_myproject_axi_exit875_proc_U0/ap_CS_fsm_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\myproject_U0/dense_array_ap_fixed_784u_array_ap_fixed_16_6_5_3_0_10u_config6_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_9_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/out_local_V_data_9_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_8_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/out_local_V_data_8_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_7_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/out_local_V_data_7_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_6_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/out_local_V_data_6_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_5_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/out_local_V_data_5_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_4_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/out_local_V_data_4_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_3_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/out_local_V_data_3_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_2_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/out_local_V_data_2_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_1_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/out_local_V_data_1_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_0_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/out_local_V_data_0_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_9_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/out_local_V_data_9_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_8_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/out_local_V_data_8_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_7_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/out_local_V_data_7_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_6_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/out_local_V_data_6_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_5_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/out_local_V_data_5_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_4_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/out_local_V_data_4_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_3_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/out_local_V_data_3_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_2_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/out_local_V_data_2_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_1_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/out_local_V_data_1_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_0_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/out_local_V_data_0_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_9_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/out_local_V_data_9_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_8_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/out_local_V_data_8_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_7_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/out_local_V_data_7_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_6_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/out_local_V_data_6_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_5_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/out_local_V_data_5_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_4_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/out_local_V_data_4_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_3_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/out_local_V_data_3_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/out_local_V_data_2_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/out_local_V_data_2_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\out_local_V_data_7_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\out_local_V_data_6_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\out_local_V_data_3_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\out_local_V_data_5_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\out_local_V_data_9_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\out_local_V_data_2_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\out_local_V_data_1_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\out_local_V_data_0_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\out_local_V_data_4_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/myproject_axi_shl_64ns_32ns_64_2_1_U50/dout_array_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\out_local_V_data_9_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\out_local_V_data_8_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\out_local_V_data_7_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\out_local_V_data_6_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\out_local_V_data_5_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\out_local_V_data_4_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\out_local_V_data_3_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\out_local_V_data_2_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\out_local_V_data_1_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\out_local_V_data_0_V_U/U_fifo_w16_d1_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Block_myproject_axi_exit875_proc_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/or_ln_i_reg_644_reg[23] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Loop_2_proc_U0/select_ln964_reg_689_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Loop_2_proc_U0/select_ln964_reg_689_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Loop_2_proc_U0/select_ln964_reg_689_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Loop_2_proc_U0/select_ln964_reg_689_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Loop_2_proc_U0/select_ln964_reg_689_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Loop_2_proc_U0/select_ln964_reg_689_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/select_ln964_reg_689_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_7_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_5_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_3_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_2_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_0_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/lshr_ln958_reg_669_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_9_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_8_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_6_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_4_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_1853_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_7_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_5_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_3_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_2_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_0_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_9_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_8_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_6_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_4_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_data_V_1853_U/U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/tmp_V_3_reg_560_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/tmp_V_reg_573_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/tmp_V_4_reg_583_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_2_proc_U0/shl_ln958_reg_674_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 22183 ; free virtual = 44535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 22580 ; free virtual = 44949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 22483 ; free virtual = 44852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 22348 ; free virtual = 44719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:01:02 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21908 ; free virtual = 44285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:01:02 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21907 ; free virtual = 44284
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21911 ; free virtual = 44288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21910 ; free virtual = 44288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21909 ; free virtual = 44286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21909 ; free virtual = 44286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    45|
+|2     |LUT1   |   123|
+|3     |LUT2   |   225|
+|4     |LUT3   |    72|
+|5     |LUT4   |   125|
+|6     |LUT5   |    66|
+|7     |LUT6   |   201|
+|8     |MUXF7  |     2|
+|9     |FDRE   |   584|
+|10    |FDSE   |   107|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21909 ; free virtual = 44286
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 89 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:00:58 . Memory (MB): peak = 2110.348 ; gain = 318.375 ; free physical = 21956 ; free virtual = 44333
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 2110.348 ; gain = 474.188 ; free physical = 21956 ; free virtual = 44333
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2110.348 ; gain = 0.000 ; free physical = 22003 ; free virtual = 44380
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2110.348 ; gain = 0.000 ; free physical = 21858 ; free virtual = 44235
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+263 Infos, 144 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:21 . Memory (MB): peak = 2110.348 ; gain = 677.500 ; free physical = 21991 ; free virtual = 44368
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2110.348 ; gain = 0.000 ; free physical = 21991 ; free virtual = 44368
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/design_1_myproject_axi_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_myproject_axi_0_0, cache-ID = 2d26431d532013e2
+INFO: [Coretcl 2-1174] Renamed 53 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2134.359 ; gain = 0.000 ; free physical = 21985 ; free virtual = 44364
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/jovyan/Internship_Waseda/hls4ml/SNN/AlexNet_PYNQ/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/design_1_myproject_axi_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_myproject_axi_0_0_utilization_synth.rpt -pb design_1_myproject_axi_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 10 04:32:20 2023...
