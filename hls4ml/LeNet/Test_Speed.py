@@ -26,15 +26,22 @@ y_test = to_categorical(y_test)
 print(x_test.shape)
 
 len_data = len(x_test)
+# ------------------------------
+# Test of the first time.
+# Useless !
+model.predict(x_test)
 
-start_time = time.time()
+inf_time = 0.
 
-pred = model.predict(x_test)
+print("---------------------------------- ^_^")
+print("Test counted.")
 
-end_time = time.time()
-
-inf_time = end_time - start_time
-
+for i in range(10):
+    start_time = time.time()
+    model.predict(x_test)
+    end_time = time.time()
+    inf_time += end_time - start_time
+inf_time /= 10.
 inf_per_sec = len_data / inf_time
 
 print("Classified", len_data, "samples in ", inf_time, "seconds. (", inf_per_sec, "inferences per second)")
